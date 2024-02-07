@@ -1,0 +1,246 @@
+
+*{
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p{
+    color: #bbd14b;
+    font-size: 20px;
+}
+body{
+    background-color: #eeeef5;
+    transition: transform 0.3s ease;
+
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    background-color:  white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+
+/* PERFIL---------------------------------------- */
+
+.perfil{
+    background-image: url(../image/perfil.jpg);
+    background-size: cover;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.second-menu nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+}
+
+/* .menu-desplegable-abierto body {
+    transform: translateX(200px); /* Ajusta el valor según el ancho de tu menú desplegable */
+  
+
+.second-menu ul li {
+    position: relative;
+}
+
+.second-menu ul li ul {
+    margin-top: 3px ;
+    display: none;
+    position: absolute;
+    background-color:  white;
+    border-radius: 10px;
+    top: 100%;
+    z-index: 1;
+}
+
+/* .second-menu ul li:hover > body {
+    display: block; 
+    transform: translateX(200px);
+} */
+
+.second-menu ul ul li:hover {
+    background-color: #eeeef5;
+    transform: translateX(200px);
+}
+
+.second-menu ul ul li {
+    width: 400px;
+}
+
+ul ul a {
+    font-size: 15px;
+    color: black;
+    line-height: 120%;
+    padding: 10px 15px;
+}
+
+
+.opcion{
+    display: flex;
+    padding: 2px;
+    gap: 3px;
+}
+
+.opcion img{
+    height: 5px;
+    width: 5px;
+
+
+}
+
+/* BARRA LATERAL-------------------------------------------- */
+
+.first-menu nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.first-menu ul li {
+    position: relative;
+
+}
+
+.first-menu ul li ul {
+    /* margin-top: 35px; */
+    padding-top: 60px;
+    margin-left: 0px;
+    display: none;
+    grid-template-rows: 9% 9% 9% 9% 9% 9% 9% 9%;
+    position: absolute;
+    background-color:  white;
+    width: 300px;
+    height: 810px;
+    z-index: 1;
+}
+
+/* .first-menu ul li ul li{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    padding-left: 10px;
+} */
+
+.first-menu ul li:hover > ul {
+    display: grid; 
+    left: -60px;
+    transition-property: left;
+    transition-duration: .10s;
+}
+
+.boton-first {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    padding: 15px;
+    background-color: #1675F1;
+    width: 85%;
+    height: 36%;
+    border-radius: 10px;
+}
+
+.boton-first p{
+    color: white;
+}
+
+.subt{
+    color: #828282;
+
+}
+
+.botones p{
+    color: black;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    padding: 15px;
+}
+
+.botones:hover {
+    background-color: #eeeef5;
+    width: 85%;
+    height: 40%;
+    border-radius: 10px;
+}
+
+ul ul a {
+    font-size: 15px;
+    color: black;
+    line-height: 120%;
+    padding: 10px 15px;
+}
+
+nav ul.open {
+    display: flex; 
+}
+
+nav ul li ul {
+    position: static; 
+    display: none;
+}
+
+
+/* cuerpo----------------------------------------------- */
+section{
+    margin: 20px;
+}
+
+progress {
+    width: 100%;
+    height: 20px;
+  }
+
+.titulo{
+    display: grid;
+    height: 100%;
+
+}
+
+.datos{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15%;
+    justify-content: center;
+    gap: 3%;
+}
+
+.datos-item{
+    background-color: white;
+    display: grid;
+    padding: 15px;
+    grid-template-rows: 30% 30% 20%;
+    height: 110px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px #828282;
+
+}
+
+.datos-item p{
+    color: black;
+}
+
+.texto{
+    padding: 20px;
+    display: grid;
+    height: 100px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px #828282;
+}
